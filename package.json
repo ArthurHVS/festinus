@@ -1,0 +1,23 @@
+{
+    "name": "casa1.0",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo 'Error: no test specified' &amp;&amp; exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bulma": "^0.7.4",
+        "circular-json": "^0.5.9",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "express-handlebars": "^3.0.1",
+        "luxon": "^1.11.3",
+        "moment": "^2.24.0",
+        "mongo": "0.1.0",
+        "mongoose": "^5.4.14"
+    }
+}

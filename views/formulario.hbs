@@ -1,0 +1,77 @@
+<section class="section">
+  <p class="{{ typhohelper1 }} {{ sizehelper1 }}">{{ name }}</p><br />
+  <div class = "tile is-ancestor">
+    <form class="tile is-ancestor {{ typhohelper1 }}" action="http://127.0.0.1:3000/cadastro/" method="post">
+      
+        <!-- Informações Pessoais -->
+        <div class="tile">
+          <div class="tile is-vertical">
+            <div class="tile is-vertical is-parent">
+            <p class="{{ typhohelper1 }} {{ sizehelper2 }}">Informações Pessoais</p><br>
+            <!-- Info Contato -->
+            <div class="{{ fieldhelper }}">
+              <input class="input {{ typhohelper3 }}" type="text" name="nome" id="name" placeholder="Nome Completo"><br>
+              <input class="input {{ typhohelper3 }} " type="text" name="recado" id="message" placeholder="Recado"><br><br>
+            </div>
+
+            <div class="{{ fieldhelper }}">
+              <input class="input {{ typhohelper3 }}" type="text" name="telefone" id="tel" placeholder="Telefone: 000-0000-0000"><br>
+              <input class="input {{ typhohelper3 }}" type="text" name="celular" id="cel" placeholder="Celular: 000-00000-0000"><br><br>
+            </div>
+
+            <div class="{{ fieldhelper }} tile is-child">
+              <input class="input {{ typhohelper3 }}" type="email" name="email" id="mailbox" placeholder="Endereço de E-mail"><br>
+            </div>
+
+            <!-- Info Endereço-->
+            <div class="{{ fieldhelper }} tile is-child">
+              <input class="input {{ typhohelper3 }}" type="text" name="endereco" id="address" placeholder="Endereço Completo"><br>
+            </div>
+
+            <div class="{{ fieldhelper }}">
+              <input class="input {{ typhohelper3 }}" type="text" name="bairro" id="nhood" placeholder="Bairro"><br>
+              <input class="input {{ typhohelper3 }}" type="text" name="cep" id="zipcode" placeholder="CEP: 00000-000"><br>
+              <input class="input {{ typhohelper3 }}" type="text" name="complemento" id="comp" placeholder="Complemento"><br><br>
+            </div>
+
+            <div class="{{ fieldhelper }} is-child">
+              <input class="input {{ typhohelper3 }}" type="text" name="cidade" id="city" placeholder="Cidade">
+            </div><br>
+            </div>
+          </div>
+      </div>
+
+    <!-- Informações do Pgto -->
+    <div class="tile is-child">
+      <div class="tile is-parent">
+        <div class="tile is-vertical is-child">
+        <p class="{{ typhohelper1 }} {{ sizehelper2 }}">Informações do Pagamento</p><br>
+        <div class="{{ fieldhelper }}">
+          <input class="input {{ typhohelper3 }}" type="date" name="primeiro" id="fpay" placeholder="Primeiro Pagamento">
+        </div>
+
+        <div class="{{ fieldhelper }}">
+            <input class="input {{ typhohelper3 }}" type="number" min="1" name="parcelas" id="npay" placeholder="Parcelas">
+        </div>
+
+        <div class="{{ fieldhelper }}">
+          <input class="input {{ typhohelper3 }}" type="number" min="1" max="31" name="vencimento" id="dpay" placeholder="Dia do Vencimento">
+        </div>
+
+        <div class="{{ fieldhelper }}">
+          <label class="radio">
+            <input class="radio {{ typhohelper3 }} is-vertical" type="radio" name="forma" value="pagdep">Depósito Identificado
+          <input class="radio {{ typhohelper3 }} is-vertical" type="radio" name="forma" value="pagent">Pagamento na Entidade
+          <input class="radio {{ typhohelper3 }}" type="radio" name="forma" value="pagoth">Outra forma
+        </div>
+
+        <div class="{{ fieldhelper }}">
+          <input class="input {{ typhohelper3 }}" id="amount" name="quantia" type="number" maxlength="15" placeholder="Quantia">
+        </div>
+        <input class="button tile" type="submit" value="Salve o Cadastro" />
+        </div>
+      </div>
+    </div>
+    
+  </form>
+</section>
